@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  /* background: #f00; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader span {
+  position: absolute;
+  border: 2px solid #fff;
+  width: 100%;
+  height: 100%;
+  animation: animate 5s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
